@@ -60,9 +60,9 @@ input,select,button{font-family:'Courier New',monospace;}
 .tbl-title{color:#e0e0e0;font-size:10px;letter-spacing:3px;font-weight:700;}
 .tbl-info{color:#1e4d2b;font-size:9px;}
 .btn-add{background:#001a0a;border:1px solid #00e676;border-radius:6px;color:#00e676;font-size:9px;padding:4px 10px;cursor:pointer;}
-.mlist{background:#0d0d0d;border:1px solid #161616;border-radius:12px;overflow:hidden;}
+.mlist{background:#0d0d0d;border:1px solid #161616;border-radius:12px;overflow:visible;}
 .mlist-head{display:grid;grid-template-columns:26px 1fr 90px 50px;gap:6px;padding:8px 12px;border-bottom:1px solid #161616;color:#1e4d2b;font-size:8px;letter-spacing:2px;}
-.mrow{border-bottom:1px solid #141414;}
+.mrow{border-bottom:1px solid #141414;position:relative;}
 .mrow:last-child{border-bottom:none;}
 .mrow-main{display:grid;grid-template-columns:26px 1fr 90px 50px;gap:6px;padding:10px 12px;align-items:center;}
 .mnum{color:#1e4d2b;font-size:10px;}
@@ -77,8 +77,8 @@ input,select,button{font-family:'Courier New',monospace;}
 .oinput{flex:1;background:#111;border:1px solid #1e4d2b;border-radius:6px;color:#e0e0e0;font-size:11px;padding:6px 10px;outline:none;}
 .ook{background:#001a0a;border:1px solid #00e676;border-radius:6px;color:#00e676;font-size:10px;padding:6px 10px;cursor:pointer;}
 .ocancel{background:transparent;border:1px solid #222;border-radius:6px;color:#444;font-size:10px;padding:6px 10px;cursor:pointer;}
-.ddwrap{position:relative;}
-.ddmenu{position:absolute;right:0;top:calc(100% + 4px);background:#0d0d0d;border:1px solid #1e4d2b;border-radius:10px;z-index:80;min-width:165px;overflow:hidden;box-shadow:0 8px 32px #000c;}
+.ddwrap{position:relative;z-index:60;}
+.ddmenu{position:absolute;right:0;bottom:calc(100% + 4px);background:#0d0d0d;border:1px solid #1e4d2b;border-radius:10px;z-index:80;min-width:165px;overflow:hidden;box-shadow:0 -4px 32px #000c;}
 .ddi{padding:10px 14px;font-size:12px;cursor:pointer;display:flex;align-items:center;gap:8px;}
 .ddck{width:14px;font-size:11px;}
 .dddel{padding:10px 14px;color:#ff4444;font-size:12px;cursor:pointer;border-top:1px solid #1a0a0a;display:flex;align-items:center;gap:8px;}
